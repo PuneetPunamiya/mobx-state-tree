@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`can add new items 1`] = `
+Object {
+  "items": Array [
+    Object {
+      "name": "asd",
+      "price": 345,
+    },
+  ],
+}
+`;
+
+exports[`can add new items 2`] = `
+Array [
+  Object {
+    "items": Array [
+      Object {
+        "name": "asd",
+        "price": 345,
+      },
+    ],
+  },
+]
+`;
+
+exports[`can add new items 3`] = `
+Array [
+  Object {
+    "op": "replace",
+    "path": "/items/0/name",
+    "value": "asd",
+  },
+]
+`;
