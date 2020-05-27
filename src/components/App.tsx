@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
-import {WishList} from '../models/WishList'
-import WishListView from './WishListView';
+import {WishListView} from './WishList';
+import {WishList} from '../models/WishList';
 
 const App = () => {
 
@@ -18,12 +18,11 @@ const App = () => {
     ]
   })
 
-  console.log(wishList.items)
   return (
     <div className="App">
       <header className="App-header">
         <h1 className="App-title">WishList</h1>
-        <WishListView items={wishList} />
+        <WishListView wishlist={wishList} />
       </header>
     </div>
   );
