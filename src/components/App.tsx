@@ -1,7 +1,8 @@
 import React from 'react';
 import './App.css';
-import {WishListView} from './WishList';
+import WishListView from './WishList';
 import {WishList} from '../models/WishList';
+// import {setInterval} from 'timers';
 
 const App = () => {
 
@@ -9,7 +10,7 @@ const App = () => {
     items: [
       {
         "name": "asd",
-        "price": 123,
+        "price": 1,
       },
       {
         "name": "qwe",
@@ -17,6 +18,10 @@ const App = () => {
       },
     ]
   })
+
+  // setInterval(() => {
+  //   wishList.items[0].changePrice(wishList.items[0].price + 1)
+  // }, 1000)
 
   return (
     <div className="App">
